@@ -3,6 +3,10 @@ module.exports = {
     port: process.env.HTTP_SERVER_PORT || 80
   },
 
+  database: {
+    adapter: process.env.DATABASE_ADAPTER || 'nedb'
+  },
+
   queryParser: {
     arrayLimit: process.env.QUERY_PARSER_ARRAY_LIMIT || 0
   },
