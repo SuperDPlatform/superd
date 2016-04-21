@@ -13,6 +13,13 @@ module.exports = {
     }
   },
 
+  rest: {
+    url: process.env.REST_URL,
+    apiKey: process.env.REST_API_KEY || ""
+  },
+
+  uuidSalt: process.env.UUID_SALT || "your-super-secret-salt",
+
   queryParser: {
     arrayLimit: process.env.QUERY_PARSER_ARRAY_LIMIT || 0
   },
